@@ -15,6 +15,19 @@ async function moduleProject4() {
   ]
 
   // 👉 Tasks 1 - 5 go here
+  document.getElementById('weatherWidget').style.display = 'none'
+  document.querySelector('#citySelect').addEventListener('change', async evt =>{
+  console.log('selection Change')
+  //  let cityOption = document.getElementById('#citySelect').options[document.getElementById('#citySelect').selectedIndex]
+  //   let selectedOption = cityOption.text
+  //   console.log('cityOption: ' + selectedOption)
+  try {
+    evt.target.setAttribute('disabled', 'disabled')
+  }
+  catch (err){
+
+  }
+  })
 
   // 👆 WORK WORK ABOVE THIS LINE 👆
 
