@@ -70,9 +70,21 @@ async function moduleProject4() {
 
   }
   })
-  function getWeekDay (date){
-    return date
+
+  
+  
+    function getWeekDay (dateString) {
+      
+      const date = new Date(dateString)
+      const dayOfWeek = date.getDay()
+      const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+      const dayysOfTheWeek = weekdays[dayOfWeek]
+
+      return dayysOfTheWeek      
   }
+  const callingDay = getWeekDay('2024-01-26')
+  console.log(callingDay)
+ 
 
   // 👆 WORK WORK ABOVE THIS LINE 👆
 
